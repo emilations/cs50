@@ -1,0 +1,16 @@
+Main function with argv[] enabled
+    if condition argv dim !=1
+        printf error text
+        return 1
+
+    convert input argv[1] to int
+    convert input to proper key
+
+
+
+    Ask user for a plain text input
+    find each valid character to
+Finds the character in the inserted phrases
+Program that shifts a given character by using the caesar formula
+Prints the user the cyphertext
+return 0

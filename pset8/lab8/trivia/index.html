@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            function correct(event)
+            {
+                let trigger = event.srcElement;
+                trigger.style.backgroundColor = 'green';
+                document.querySelector('#a1').innerHTML = 'correct';
+            }
+            function notcorrect(event)
+                {
+                let trigger = event.srcElement;
+                trigger.style.backgroundColor = 'red';
+                document.querySelector('#a1').innerHTML = 'incorrect';
+                }
+            function answer(event)
+            {
+                let ans1 = document.querySelector('#a2')
+                if (ans1.value == 'Ottawa')
+                {
+                    ans1.style.backgroundColor = 'green'
+                    document.querySelector('#a3').innerHTML = 'correct';
+                }
+                else
+                {
+                    ans1.style.backgroundColor = 'red'
+                    document.querySelector('#a3').innerHTML = 'incorrect';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>How many weeks is cs50x composed of:</h3>
+                <button onclick="notcorrect(event)">07 Weeks</button>
+                <button onclick="notcorrect(event)">08 Weeks</button>
+                <button onclick="notcorrect(event)">09 Weeks</button>
+                <button onclick="correct(event)">10 Weeks</button>
+                <button onclick="notcorrect(event)">11 Weeks</button>
+                <p id="a1"></p>
+                <!-- TODO: Add multiple choice question here -->
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What is the capital of Canada?</h3>
+                <input id="a2" type="text">
+                <button onclick="answer(event)">Check Answer</button>
+                <p id="a3"></p>
+                <!-- TODO: Add free response question here -->
+            </div>
+        </div>
+    </body>
+</html>

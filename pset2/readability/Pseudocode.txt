@@ -1,0 +1,14 @@
+Pseudocode for readability
+
+The program asks the user for the text using GET STRING
+The program counts the number of letters
+The program counts the number of words
+The program counts the number of sentences
+The program calculates the index and rounds it to the nearest integer
+The program calculates the grade level of the text
+
+Constraints
+1- Any letter from a to z and A to Z counts as letters
+2- Words are seperated by spaces
+3- Any . ? ! counts as end of sentence
+4- Any grade above 16 should print Grade 16+ and any grade bellow 1 should print efore Grade 1

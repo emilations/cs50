@@ -1,0 +1,47 @@
+sort1 uses: Bubble sort
+
+random5000.txt      t: 00.138s
+random10000.txt     t: 00.496s
+random50000.txt     t: 13.858s
+
+reversed5000.txt    t: 00.113s
+reversed10000.txt   t: 00.365s
+reversed50000.txt   t: 11.646s
+
+sorted5000.txt      t: 00.012s
+sorted10000.txt     t: 00.038s
+sorted50000.txt     t: 02.117s
+
+How do you know?: This alogrithm is positevely afftect by sorted elements and seems to slow down n^2 when an unsorted size elements gets bigger.
+
+sort2 uses: Merge sort
+
+random5000.txt      t: 00.022s
+random10000.txt     t: 00.020s
+random50000.txt     t: 02.849s
+
+reversed5000.txt    t: 00.011s
+reversed10000.txt   t: 00.090s
+reversed50000.txt   t: 02.100s
+
+sorted5000.txt      t: 00.011s
+sorted10000.txt     t: 00.021s
+sorted50000.txt     t: 02.832s
+
+How do you know?: Because merge sort have identical performances at the both the best and worst case. However the process time is affected to a lesser degree when enlarging the size comapred to others.
+
+sort3 uses: Selection sort
+
+random5000.txt      t: 00.043s
+random10000.txt     t: 00.164s
+random50000.txt     t: 08.185s
+
+reversed5000.txt    t: 00.033s
+reversed10000.txt   t: 00.188s
+reversed50000.txt   t: 06.792s
+
+sorted5000.txt      t: 00.051s
+sorted10000.txt     t: 00.236s
+sorted50000.txt     t: 07.106s
+
+How do you know?: This has the same behaviour of the merge sort but the problem size seem to affect it more and that corresponds better to a n^2 vs nlogn.
